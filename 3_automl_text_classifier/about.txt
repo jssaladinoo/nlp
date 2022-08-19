@@ -1,0 +1,3 @@
+This notebook utilizes AutoML to inspect the raw dataset, apply feature processors, pick the best set of algorithms, train and tune multiple models, and then rank the models based on performance - all with just a few clicks.  Sagemaker Autopilot transparently generates a set of Python scripts and notebooks for a complete end-to-end pipeline including data analysis, candidate generation, feature engineering, and model training/tuning.
+
+The best model candidate, which has 0.6150 validation accuracy, is a xgboost classifier with 'MultiColumnTfidfVectorizer' and 'RobustStandardScaler' data transformation. 
