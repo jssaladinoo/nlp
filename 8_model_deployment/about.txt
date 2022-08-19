@@ -1,0 +1,1 @@
+This notebook creates an endpoint with multiple variants, splitting the traffic between them.
