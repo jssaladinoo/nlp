@@ -1,0 +1,1 @@
+Bias can be present in your data before any model training occurs. Inspecting the dataset for bias can help detect collection gaps, inform your feature engineering, and understand societal biases the dataset may reflect. This notebook used Sagemaker Clarify to analyze bias on the generate and analyze bias report, and prepare the dataset for the model training.
