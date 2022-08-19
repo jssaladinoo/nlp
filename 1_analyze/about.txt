@@ -1,0 +1,1 @@
+This notebook ingest and transform the customer product reviews dataset. The transformed data is saved in a S3 bucket and analyzed using AWS Data Wrangler
