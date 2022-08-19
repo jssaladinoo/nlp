@@ -1,0 +1,3 @@
+When training ML models, hyperparameter tuning is a step taken to find the best performing training model. In this notebook a random algorithm of Automated Hyperparameter Tuning to train a BERT-based natural language processing (NLP) classifier is applied. The model analyzes customer feedback and classifies the messages into positive (1), neutral (0), and negative (-1) sentiments.
+
+The hyperparameter space is limited to 'learning_rate' which is a continuous parameter between (0.00001, 0.00005) and train_batch_size which is categorical  parameter with values 128 and 256. The best model have 0.000047 learning_rate and 128 train_batch_size and has a 0.7383 validation accuracy.
