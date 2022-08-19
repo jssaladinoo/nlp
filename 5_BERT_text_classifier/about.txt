@@ -1,0 +1,3 @@
+Utiizing the engineered features in the previous task, this notebook trains a text classifier using a variant of BERT called [RoBERTa](https://arxiv.org/abs/1907.11692) - a Robustly Optimized BERT Pretraining Approach - within a PyTorch model. 
+
+The model achieved a 0.6914 validation accuracy which is slightly higher than the AutoML model.
