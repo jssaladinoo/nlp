@@ -1,0 +1,9 @@
+This notebook builds a SageMaker Pipeline to train and deploy a BERT-based test classifier. The pipeline follows a typical machine learning application pattern of pre-processing, training, evaluation, and model registration.  
+
+In the processing step, feature engineering is performed to transform the `review_body` text into BERT embeddings using the pre-trained BERT model and split the dataset into train, validation and test files. The transformed dataset is stored in a feature store. To optimize for Tensorflow training, the transformed dataset files are saved using the TFRecord format in Amazon S3.
+
+In the training step, the BERT model is fine-tuned to the customer reviews dataset and a new classification layer is added to predict the `sentiment` for a given `review_body`.
+
+In the evaluation step, the trained model and the test dataset were taken as input, and produce a JSON file containing classification evaluation metrics.
+
+In the condition step, trained models that were able to exceed the pre-determined threshold value for the model accuracy are added in the registry.
